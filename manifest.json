@@ -1,0 +1,32 @@
+{
+    "name": "IRC",
+    "description": "It is used to chat",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.webkul.com/*"
+            ],
+            "js": [
+                "js/content.js"
+            ],
+            "css": [
+                "style/style.css"
+            ],
+            "all_frames": false
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ],
+    "icons": {
+        "16": "image/icon.png",
+        "48": "image/icon.png",
+        "128": "image/icon.png"
+    },
+    "browser_action": {
+        "default_title": "Sample application",
+        "default_icon": "image/icon.png"
+    },
+    "manifest_version": 2
+}
